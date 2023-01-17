@@ -1,0 +1,470 @@
+@media (max-width: 1024px){
+
+}
+
+
+@media (max-width: 981px){
+  .nav__item{
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    top: -60%;
+    left: 0;
+    margin: 0;
+    display: flex;
+    text-align: left;
+    padding: 0 25px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.2rem;
+    background: linear-gradient(rgb(113, 113, 213), rgb(15, 15, 48));
+    transition: top 0.5s ease-in-out;  
+  }
+   
+  .nav__link{
+     padding: 5px 0;
+  }
+
+  .nav__link a{
+    transition: 0.5s ease;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .nav__close{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 45px;
+    cursor: pointer;
+    color: #fff;
+    z-index:1000;
+  }
+  
+    .nav__toggle{
+      display: flex;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: rgb(113, 113, 213);
+      
+    }
+
+    .nav__item.active{
+      top: 0%;
+    }
+
+    .menu__btn{
+      margin-right: 70px;
+    }
+    
+
+    .left__button{
+       display: none;
+    }
+
+    .right__button{
+        display: none;
+    }
+
+    .col_box{
+       margin: 20px auto;
+    }
+
+    .hero__content{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .popup{
+       left: 60%;
+    }
+
+    .main__footer{
+       margin: 0 10px;
+    }
+
+    .service{
+       padding: 0 10px;
+    }
+
+    .ser_conta {
+        height: auto;
+    }
+
+    .sc-box{
+       padding: 10px 10px;
+    }
+
+    .article__box{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .art_detail{
+       margin-bottom: 25px;
+    }
+
+    .hero__txt .hero__sumbit{
+       display: flex;
+       justify-content: center;
+    }
+    
+
+    .hero_txt_info{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .hr-info{
+        justify-content: center;
+        text-align: center;
+        margin: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px){
+ .nav__item{
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    top: -60%;
+    left: 0;
+    margin: 0;
+    display: flex;
+    text-align: left;
+    padding: 0 25px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.2rem;
+    background: linear-gradient(rgb(113, 113, 213), rgb(15, 15, 48));
+    transition: top 0.5s ease-in-out;  
+  }
+   
+  .nav__link{
+     padding: 5px 0;
+  }
+
+  .nav__link a{
+    transition: 0.5s ease;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .nav__close{
+    display: flex;
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    font-size: 45px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+    .nav__toggle{
+      display: flex;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color:rgb(111, 111, 218);
+      
+    }
+
+    .nav__item.active{
+      top: 0%;
+    }
+
+    .menu__btn{
+     display: none;
+    }
+     
+    
+    .hero__content{
+      text-align: left;
+    }
+
+    .nav__collect ul li{
+      margin: 20px 0;
+      padding: 0 15px;
+    }
+    
+    .left__button{
+      display: none;
+    }
+    .right__button{
+      display: none;
+    }
+
+    .col_box{
+      margin-bottom: 30px;
+    }
+
+    .ser_conta{
+       height: auto;
+       text-align: center;
+    }
+    
+    .sc-box{
+       text-align: center;
+       margin: 0 auto;
+       padding: 30px 0;
+    }
+    .article__box{
+        flex-direction: column;
+    }
+
+    .art_detail{
+        margin-bottom: 30px;
+     }
+
+    .mail__box{
+       padding: 0px 10px;
+       height: auto;
+     }
+    .main__footer{
+      flex-direction: column;
+      padding: 0px 25px;
+     }
+
+    .social__brand{
+      margin-bottom: 30px;
+     }
+
+    .foot-nav{
+      margin-bottom: 30px;
+     }
+
+     .hero__picture{
+       display: none;
+     }
+
+     .hero__content{
+       text-align: center;
+       display: flex;
+       justify-content: center;
+    }
+
+    .hero__txt{
+       padding-top: 70px;
+    }
+
+    .hero__sumbit{
+       display: flex;
+       justify-content: center;
+    }
+
+    .hero_txt_info{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       margin: 0;
+       padding: 0;
+    }
+
+    .hr-info{
+      margin: 0 20px;
+    }
+    /*------- market responsive --------*/
+     .market_dashboard{
+       padding: 20px 20px;
+       margin-left: 270px;
+     }
+
+     .dashboard-nav ul li{
+      display: none;
+    }
+
+    .mark_box{
+       margin-bottom: 40px;
+    }
+
+    .com-mark-info img{
+      max-width: 768px;
+    }
+
+  }
+
+@media (max-width: 432px) {
+       .art__pic img{
+           max-width: 300px;
+       }
+       .art_detail{
+          max-width: 300px;
+          height: auto;
+      }
+
+      .art__info{
+        height: 200px; 
+      }
+
+      .small{
+        max-width: 100px;
+        height: 100px;
+      }
+
+      .big{
+        width: 150px;
+      }
+
+      .h2{
+        font-size: 35px;
+      }
+      .mail__box{
+      margin-bottom: 50px;
+      border: none;
+    }
+
+    .hr-info{
+      margin-right: 0 auto;
+  }
+
+   .hero__txt h1{
+     font-size: 35px;
+    }
+
+   .hero__txt h1 .clr__txt{
+      font-size: 45px;
+    }
+
+
+    .hero__txt p{
+      font-size: 17px;
+    }
+
+    .hero__sumbit .primary__btn{
+      max-width: 110px;
+    }
+
+    .hero__sumbit .secondry__btn{
+       max-width: 110px;
+    }
+
+    .hero_txt_info span{
+       font-size: 16px;
+    }
+
+    .hero_txt_info a{
+       font-size: 12px;
+    }
+
+
+    .swiper-slide{
+      max-width: 315px;
+      padding: 5px;
+    }
+
+    .latest-slide{
+    padding: 0;}
+
+   
+    .latest__thumbnail_wrap{
+        padding: 22px;
+    }
+    .latest__thumbnail_wrap img{
+       max-width: 270px;
+    }
+   
+    .latest__btn{
+      display: none;
+    }
+    
+
+    .latest-com-frst-pic{
+      padding: 0 10px;
+    }
+    
+    .latest__biding{
+      padding: 20px 10px;
+    }
+     
+    .first-step img{
+       width: 260px;
+       height: 90px;
+    }
+
+    .sumbit__mail{
+       padding: 15px 0px;
+    }
+
+    .latest h2{
+      font-size: 30px;
+   }
+
+   .col_box{
+      max-width: 310px;
+  }
+
+   .market-nav{
+     width: 70px;
+     transition: all 0.5s ease;
+  } 
+
+  .market-nav:hover{
+    width: 200px;
+ } 
+  .market_dashboard{
+     margin-left: 70px;
+     padding: 0 20px;
+  }
+
+  .com-mark-info img{
+      width: 100%;
+      max-width: 310px;
+  }
+
+  .com-mark-txt span{
+     font-size: 18px;
+  }
+
+  .com-mark-info button{
+     display: none;
+  }
+
+  .market-create-btn button{
+     display: none;
+  }
+
+  .dashboard-nav{
+     padding: 20px 0;
+  }
+
+  .mark_box{
+     width: 100%;
+     max-width: 300px;
+     height: auto;
+  }
+
+  .mark-img-box img{
+     width: 100%;
+     max-width: 300px;
+  }
+
+  .search-box-nav input{
+     width: 100%;
+     max-width: 300px;
+     text-align: center;
+     justify-content: center;
+     margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------------- REMİX İCONS ------------------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!----------------- Clash Display ---------------------------------->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap" rel="stylesheet"/>
+    <!------------------ GOOGLE FONTS --------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <!------------------- SWİPER JS --------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--------------------- Favicon İco ------------------------------->
+    <link rel="shortcut icon" href="images/favicon.png"/> 
+    <!------------------ LİNK CSS --------------------------->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="sass/styles.scss">
+    <title>NFT Market</title>
+  </head>
+  <body>
+    <!-------------------- Hero Section  ------------------------->
+    <section class="hero__main" id="mains">
+      <!----------- Header ------------->
+      <header class="header" id="header">
+        <nav class="navbar__menu container">
+          <div class="logo">
+            <img src="images/logo-nft.svg" />
+            <a href="#">ENDFT</a>
+          </div>
+          <ul class="nav__item" id="nav-item">
+            <li class="nav__link"><a href="market.html">Marketplace</a></li>
+            <li class="nav__link"><a href="#">Collection</a></li>
+            <li class="nav__link"><a href="#">Community</a></li>
+            <li class="nav__link"><a href="create.html">Create</a></li>
+              <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+              </div>
+          </ul>
+          <div class="menu__btn">
+            <button id="show-login">Connect Wallet</button>
+            <img src="images/moon-fill.png" id="icon">
+          </div>
+          <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+              <h2>Log in</h2>
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+              </div>
+              <div class="form-element">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter password">
+              </div>
+              <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+              </div>
+              <div class="form-element">
+                <button>Sign in</button>
+              </div>
+              <div class="form-element">
+                <a href="#">Forgot Password</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </nav>
+      </header>
+      <div class="hero__content container">
+        <div class="hero__txt">
+          <h1>
+            Discover<br />
+            Collect,& Sell<br />
+            <span class="clr__txt">Extraordinary</span><br />
+            NFTs
+          </h1>
+          <p>
+            The leading NFT Marketplace on Ethereum<br />
+            Home to the next generation of digital creators<br />
+            Discover the best NFT collections.
+          </p>
+          <div class="hero__sumbit">
+            <button class="primary__btn">Explore</button>
+            <button class="secondry__btn">Create</button>
+          </div>
+          <div class="hero_txt_info">
+            <div class="hr-info">
+              <span>432K+</span>
+              <a href="">Collections</a>
+            </div>
+            <div class="hr-info">
+              <span>200K+</span>
+              <a href="">Artists</a>
+            </div>
+            <div class="hr-info">
+              <span>10K+</span>
+              <a href="">Community</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero__picture">
+          <img src="images/hero-png.png" />
+        </div>
+      </div>
+      <div class="hero__brands">
+        <div class="first-step">
+          <img src="images/MetaMask.svg" alt="" />
+          <img src="images/ttrust.svg" alt="" />
+          <img src="images/Group 78.svg" alt="" />
+          <img src="images/Exodus_Logo.svg" alt="" />
+          <img src="images/Mask group.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-------------------- hero section end ------------------------->
+
+
+    <!-------------------- Hero Swiper ------------------------->
+    <section class="latest">
+      <h2>TrendingNFTs</h2>
+      <div class="container__latest">
+          <div class="swiper swiper-latest" id="swiperLatest">
+              <div class="swiper-wrapper" id="swiperWrap">
+                  <a href="#" class="swiper-slide latest-slide">
+                      <div class="latest__thumbnail_wrap">
+                          <img src="images/Rectangle 11.png" class="latest__thumbnail" alt="Latest 1">
+                      </div>
+                      <div class="latest__info">
+                          <div class="latest__head">
+                               <div class="latest-com-frst-pic">
+                                  <img src="images/Avatar4.svg" alt="">
+                                  <h6>CryptoPunk 3D #13</h6>
+                               </div>
+                              <p class="latest__eth">
+                                 <img src="images/Collector Logo -ETH.svg" alt="">
+                              </p>
+                          </div>
+                          <div class="latest__biding">
+                              <div class="latest__avas">
+                                 <span>15.8 ETH<br>latest Bid</span>
+                              </div>
+                              <p class="latest__biding-num">
+                                 <span>9.45 ETH<br>from</span>
+                              </p>
+                              <div class="latest__fav">
+                                <span>$180,345<br>-2.25%</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide latest-slide">
+                    <div class="latest__thumbnail_wrap">
+                      <img src="images/slider1.png" class="latest__thumbnail" alt="Latest 1">
+                  </div>
+                  <div class="latest__info">
+                      <div class="latest__head">
+                           <div class="latest-com-frst-pic">
+                              <img src="images/Avatar3.svg" alt="">
+                              <h6>RabbitHole</h6>
+                           </div>
+                          <p class="latest__eth">
+                             <img src="images/Collector Logo -ETH.svg" alt="">
+                          </p>
+                      </div>
+                      <div class="latest__biding">
+                          <div class="latest__avas">
+                             <span>50.8 ETH<br>latest Bid</span>
+                          </div>
+                          <p class="latest__biding-num">
+                             <span>19.5 ETH<br>from</span>
+                          </p>
+                          <div class="latest__fav">
+                            <span>$6840,35<br>+25.5%</span>
+                          </div>
+                      </div>
+                  </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide latest-slide">
+                    <div class="latest__thumbnail_wrap">
+                      <img src="images/slider2.png" class="latest__thumbnail" alt="Latest 1">
+                  </div>
+                  <div class="latest__info">
+                      <div class="latest__head">
+                           <div class="latest-com-frst-pic">
+                              <img src="images/Avatar4.svg" alt="">
+                              <h6>Invisible #54</h6>
+                           </div>
+                          <p class="latest__eth">
+                             <img src="images/Collector Logo -ETH.svg" alt="">
+                          </p>
+                      </div>
+                      <div class="latest__biding">
+                          <div class="latest__avas">
+                             <span>5.8 ETH<br>latest Bid</span>
+                          </div>
+                          <p class="latest__biding-num">
+                             <span>2.45 ETH<br>from</span>
+                          </p>
+                          <div class="latest__fav">
+                            <span>$251,5<br>-9.25%</span>
+                          </div>
+                      </div>
+                  </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide latest-slide">
+                    <div class="latest__thumbnail_wrap">
+                      <img src="images/slider3.png" class="latest__thumbnail" alt="Latest 1">
+                  </div>
+                  <div class="latest__info">
+                      <div class="latest__head">
+                           <div class="latest-com-frst-pic">
+                              <img src="images/Avatar_2.svg" alt="">
+                              <h6>NFTPunk 3D #42</h6>
+                           </div>
+                          <p class="latest__eth">
+                             <img src="images/Collector Logo -ETH.svg" alt="">
+                          </p>
+                      </div>
+                      <div class="latest__biding">
+                          <div class="latest__avas">
+                             <span>5.8 ETH<br>latest Bid</span>
+                          </div>
+                          <p class="latest__biding-num">
+                             <span>0.45 ETH<br>from</span>
+                          </p>
+                          <div class="latest__fav">
+                            <span>$5680,1<br>-3.5%</span>
+                          </div>
+                      </div>
+                  </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide latest-slide">
+                    <div class="latest__thumbnail_wrap">
+                      <img src="images/slider4.png" class="latest__thumbnail" alt="Latest 1">
+                  </div>
+                  <div class="latest__info">
+                      <div class="latest__head">
+                           <div class="latest-com-frst-pic">
+                              <img src="images/Avatar4.svg" alt="">
+                              <h6>Friend #54</h6>
+                           </div>
+                          <p class="latest__eth">
+                             <img src="images/Collector Logo -ETH.svg" alt="">
+                          </p>
+                      </div>
+                      <div class="latest__biding">
+                          <div class="latest__avas">
+                             <span>9.8 ETH<br>latest Bid</span>
+                          </div>
+                          <p class="latest__biding-num">
+                             <span>1.45 ETH<br>from</span>
+                          </p>
+                          <div class="latest__fav">
+                            <span>$147,5<br>-12.5%</span>
+                          </div>
+                      </div>
+                  </div>
+                  </a>
+
+                  <a href="#" class="swiper-slide latest-slide">
+                    <div class="latest__thumbnail_wrap">
+                      <img src="images/slider5.png" class="latest__thumbnail" alt="Latest 1">
+                  </div>
+                  <div class="latest__info">
+                      <div class="latest__head">
+                           <div class="latest-com-frst-pic">
+                              <img src="images/Avatar_2.svg" alt="">
+                              <h6>HAPE #8064</h6>
+                           </div>
+                          <p class="latest__eth">
+                             <img src="images/Collector Logo -ETH.svg" alt="">
+                          </p>
+                      </div>
+                      <div class="latest__biding">
+                          <div class="latest__avas">
+                             <span>12.1 ETH<br>latest Bid</span>
+                          </div>
+                          <p class="latest__biding-num">
+                             <span>6.45 ETH<br>from</span>
+                          </p>
+                          <div class="latest__fav">
+                            <span>$3580,5<br>+67.25%</span>
+                          </div>
+                      </div>
+                  </div>
+                  </a>
+
+              </div>
+
+              <div class="swiper-button-prev latest__btn">
+                  <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.13968 5.06064L5.54906 0.305449C5.92592 -0.100939 6.53787 -0.101926 6.91589 0.303163C7.29387 0.708303 7.29484 1.36612 6.91802 1.77251L2.50564 6.53082C2.13482 6.92733 1.93245 7.45123 1.93288 8.00904C1.93332 8.56686 2.13651 9.09034 2.50507 9.48306L6.91691 14.2264C7.29435 14.6322 7.2943 15.29 6.91686 15.6957C6.53947 16.1015 5.92752 16.1014 5.55012 15.6957L1.14132 10.9556C0.407311 10.1734 0.000923387 9.12649 5.26966e-06 8.01081C-0.000912848 6.89513 0.403832 5.84744 1.13968 5.06064Z"
+                          fill="#060714" />
+                  </svg>
+              </div>
+              <div class="swiper-button-next latest__btn">
+                  <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M6.06033 10.9394L1.65095 15.6946C1.27408 16.1009 0.662133 16.1019 0.28411 15.6968C-0.0938641 15.2917 -0.0948308 14.6339 0.281984 14.2275L4.69436 9.46918C5.06518 9.07267 5.26756 8.54877 5.26712 7.99096C5.26669 7.43314 5.06349 6.90966 4.69494 6.51694L0.283096 1.77359C-0.0943471 1.36782 -0.0942985 0.710009 0.283144 0.304297C0.660539 -0.101467 1.27249 -0.101415 1.64988 0.304349L6.05868 5.04443C6.79269 5.82655 7.19908 6.87351 7.2 7.98919C7.20092 9.10487 6.79617 10.1526 6.06033 10.9394Z"
+                          fill="#060714" />
+                  </svg>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-------------------- Swiper end ------------------------->
+
+    
+    <!-------------------- Hero collection ------------------------->
+    <section class="hero__collection" id="collections">
+      <div class="collect container">
+        <div class="head__col">
+          <h2 class="h2">Top Collections</h2>
+        </div>
+
+        <nav class="nav__collect">
+          <ul>
+            <li><a href="" class="active__menu">Art</a></li>
+            <li><a href="">Collection</a></li>
+            <li><a href="">Metaverse</a></li>
+            <li><a href="">Virtual Worlds</a></li>
+            <li><a href="">Sports</a></li>
+            <li><a href="">Music</a></li>
+          </ul>
+        </nav>
+
+        <div class="box__collect container">
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 12.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>COOLGUYZZ</h5>
+              <span>Collguyzz.io</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">1.5 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$2045.12</a>
+                <span class="in-red">-12.45%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 9.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>gangstaboi v.1</h5>
+              <span>GB_Gangs.io</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">2.53 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$4043.12</a>
+                <span class="in-green">+34.35%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 7.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>HyperApe</h5>
+              <span>HyperApe.co</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">1.31 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$$1743.4</a>
+                <span class="in-green">-5.5%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 15.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>Lyodd$1</h5>
+              <span>Naomi Po</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">1.116 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$263</a>
+                <span class="in-red">+12.45%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 11.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>Azuki 3D</h5>
+              <span>AZUKI.JP</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">1.5 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$1905</a>
+                <span class="in-green">+1.6%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 8.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>CuteApe White</h5>
+              <span>CuteApe_99</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">1.5 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$245.6</a>
+                <span class="in-red">-14.5%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 14.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>SneakerHead Vol.1</h5>
+              <span>SneakerHead.Corp</span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">1.4 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$5032.2</a>
+                <span class="in-green">+32.4%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-glass">
+            <div class="box-img">
+              <img src="images/image 6.png" alt="" />
+            </div>
+            <div class="box__text">
+              <h5>cvltB3AR</h5>
+              <span>CVLTBEAR </span>
+            </div>
+            <div class="box_info_txt">
+              <div class="left-txt-in">
+                <a href="">0.78 ETH</a>
+                <span>Floor Price</span>
+              </div>
+              <div class="right-txt-in">
+                <a href="">$636</a>
+                <span class="in-red">+12.45%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more__btn">
+          <button>See More</button>
+        </div>
+      </div>
+    </section>
+    <!-------------------- Hero collection end ---------------------->
+
+
+    <!--------------------categories hero ------------------------->
+     <section class="hero__categories" id="page-cate">
+      <div class="cate_epsi container">
+        <div class="cat__head">
+          <h2 class="h2">Categories</h2>
+        </div>
+
+        <div class="box__cate">
+            <div class="col_box">
+              <div class="left_col_pic">
+                <img src="images/image 18.png" class="small">
+                <img src="images/image 22.png" class="small">
+              </div>
+              <div class="right_col_pic">
+                <img src="images/image 23.png" class="big">
+              </div>
+                <span>Art</span>
+           </div>
+
+           <div class="col_box">
+            <div class="left_col_pic">
+              <img src="images/image 26.png" class="small">
+              <img src="images/image 27.png" class="small">
+            </div>
+            <div class="right_col_pic">
+              <img src="images/image 28.png" class="big">
+            </div>
+              <span>Collectibles</span>
+         </div>
+
+         <div class="col_box">
+          <div class="left_col_pic">
+            <img src="images/image 30.png" class="big">
+          </div>
+          <div class="right_col_pic">
+            <img src="images/image 31.png" class="small">
+            <img src="images/image 18.png" class="small">
+          </div>
+            <span class="transf">Virtual Worlds & Metaverse</span>
+       </div>
+
+
+         
+               <a href="#" class="left__button arrow" id="">
+                  <img src="images/leftt.svg" alt="">
+               </a>
+               <a href="" class="right__button arrow" id="">
+                <img src="images/righttt.svg" alt="">
+               </a>
+
+
+        </div>
+        <div class="more__btn">
+          <button>See More</button>
+        </div>
+      </div>
+     </section>
+    <!-------------------- end categories ------------------------->
+    
+
+    <!-------------------- services ------------------------->
+    <section class="main__service" id="services">
+      <div class="service container">
+       <div class="ser_conta">
+            <div class="service__head">
+                <h2 class="h2">Create And Sell Your NFTs</h2>
+            </div>
+        <div class="service__box">
+            <div class="sc-box">
+              <div class="sc_pic">
+                <img src="images/Wallet.svg" alt="" />
+              </div>
+              <div class="sc_details">
+                <h4>Set up your wallet</h4>
+                <p>
+                  Once you’ve set up your wallet of<br>
+                  choice, connect it to OpenSea by<br>
+                  clicking the wallet icon in the top right<br>
+                  corner. Learn about the wallets we<br>
+                  support.
+                </p>
+              </div>
+            </div>
+            <div class="sc-box">
+              <div class="sc_pic">
+                <img src="images/Paper-Upload.svg" alt="" />
+              </div>
+              <div class="sc_details">
+                <h4>Uploud & Create Collection</h4>
+                <p>Upload your work then Click My<br>
+                   Collections and set up your collection.<br>
+                   Add social links, a description, profile<br>
+                   & banner images, and set a<br>
+                   secondary sales fee.</p>
+              </div>
+            </div>
+            <div class="sc-box">
+              <div class="sc_pic">
+                <img src="images/Bookmark.svg" alt="" />
+              </div>
+              <div class="sc_details conn">
+                <h4>List them for sale</h4>
+                <p>Choose between auctions, fixed-price<br>
+                   listings, and declining-price listings.<br>
+                   You choose how you want to sell your<br>
+                   NFTs, and we help you sell them</p>
+              </div>
+            </div>
+          </div>
+  
+       </div>
+      </div>
+    </section>
+    <!-------------------- end services ------------------------->
+    
+    <!-------------------- article ------------------------->
+    <section class="hero__article" id="articles">
+         <div class="article container">
+            <div class="artic__head">
+                <h2 class="h2">Articles</h2>
+            </div>
+            <div class="article__box">
+                <div class="art_detail">
+                    <div class="art__pic">
+                        <img src="images/artıc.png" alt="">
+                    </div>
+                    <div class="art__info">
+                        <h4>We've lowered marketplace fees<br>
+                        on all your favorite NFTs</h4>
+                        <span>July 7, 2022</span>
+                    </div>
+                </div>
+
+                <div class="art_detail">
+                    <div class="art__pic">
+                        <img src="images/artıc 2.png" alt="">
+                    </div>
+                    <div class="art__info">
+                        <h4>Your Ultimate Guide to Getting<br>
+                        Started With NFTs on Rarible
+                        </h4>
+                        <span>April 03, 2022</span>
+                    </div>
+                </div>
+
+                <div class="art_detail">
+                    <div class="art__pic">
+                        <img src="images/artıc 1.png" alt="">
+                    </div>
+                    <div class="art__info">
+                        <h4>Why Community Marketplaces<br>
+                        are the future of NFT trading</h4>
+                        <span>January 23, 2022</span>
+                    </div>
+                </div>
+            </div>
+            
+         </div>
+    </section>
+    <!-------------------- end artıcle ------------------------->
+
+
+    <!-------------------- hero footer ------------------------->
+    <section class="footer__mail" id="mailfot">
+        <div class="mail-and-footer container">
+            <div class="mail__box">
+                <div class="mail-head">
+                    <h4>Get More Updates</h4>
+                </div>
+                <span class="mail__info">
+                    Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks
+                </span>
+                <div class="sumbit__mail">
+                    <input type="text" placeholder="Your Email...">
+                </div>
+            </div>
+
+            <div class="main__footer">
+                <div class="fott__info">
+                    <div class="fot__head">
+                        <img src="images/logo-nft.svg">
+                        <h5>ENDFT</h5>
+                    </div>
+                    <p class="read__fot">
+                        the leading NFT Marketplace on Ethereum<br>
+                        Home to the next generation of digital creators.<br>
+                        Discover the best NFT collections.
+                    </p>
+                    <div class="social__brand">
+                        <img src="images/twitter.svg">
+                        <img src="images/discord.svg">
+                        <img src="images/insta.svg">
+                        <img src="images/youtube.svg">
+                    </div>
+                </div>
+
+                <div class="foot-nav">
+                    <span class="foot_sp">Marketplace</span>
+                    <li>
+                        <a href="">Explore</a>
+                        <a href="">Articles</a>
+                        <a href="">How & Works</a>
+                        <a href="">Help</a>
+                    </li>
+                </div>
+                 
+                <div class="foot-nav">
+                    <span class="foot_sp">Links</span>
+                    <li>
+                        <a href="">Tokens</a>
+                        <a href="">API</a>
+                        <a href="">Big Bounty</a>
+                        <a href="">Become Partners</a>
+                    </li>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </section>
+   <!-------------------- hero footer end ------------------------->
+
+    <!--------------------scroll to top ------------------------->
+    <a href="#" class="to-top">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-------------------- js swiper and js page link ------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
